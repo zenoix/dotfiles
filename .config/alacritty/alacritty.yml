@@ -1,0 +1,29 @@
+# Window settings
+window:
+  # Window padding
+  padding:
+    x: 10
+ 
+# Font configuration
+font:
+  # Normal font face
+  normal:
+    # SFMono Nerd Font can be found here https://github.com/epk/SF-Mono-Nerd-Font
+    family: SFMono Nerd Font
+    style: Regular
+    
+  size: 12
+
+import:
+  # uncomment the flavour you want below:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+  #  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  #  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
+  #  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
+
+cursor:
+  style:
+    blinking: On
+
+env:
+  TERM: xterm-256color
