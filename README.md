@@ -5,6 +5,7 @@ This directory contains the dotfiles for my Pop OS system.
 It includes the files for the following applications:
 - Zsh and Oh My Zsh
 - Alacritty
+- Neovim (using Packer)
 
 ## Requirements
 
