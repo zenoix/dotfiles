@@ -6,6 +6,7 @@ It includes the files for the following applications:
 - Zsh and Oh My Zsh
 - Alacritty
 - Neovim (using Packer)
+- tmux (using TPM)
 
 ## Requirements
 
