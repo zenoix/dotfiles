@@ -55,6 +55,7 @@ and I also use the following Oh My Zsh plugins:
 - copypath
 - copydir
 - zsh-autosuggestions
+- z
 
 The last of which needs to be installed as well.
 
