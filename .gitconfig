@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Zenoix
+	email = 41812358+Zenoix@users.noreply.github.com
+[credential]
+	helper = cache
