@@ -1,2 +1,5 @@
 # Ignore nvim plugin directory
 .config/nvim/plugin/*
+
+# Ignore the installed tmux plugins (they should be installed manually with TPM)
+.config/tmux/plugins
