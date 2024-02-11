@@ -106,6 +106,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-export PATH="$PATH:/opt/julia-1.9.3/bin"
 
 
