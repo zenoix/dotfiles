@@ -108,5 +108,4 @@ $ stow .
 - Create firefox.sh install script
   - Make firefox default browser
 -  Update documentation for the install scripts
--  Add .condarc
 -  Add .gitconfig
