@@ -85,4 +85,28 @@ $ stow .
 
 ## References
 
-Idea and methodology is based on Dreams of Autonomy's video [Stow has forever changed the way I manage my dotfiles](https://www.youtube.com/watch?v=y6XCebnB9gs)
+- Idea and methodology is based on Dreams of Autonomy's video [Stow has forever changed the way I manage my dotfiles](https://www.youtube.com/watch?v=y6XCebnB9gs).
+
+- Install scripts were inspired by Bartek Spitza's video [Solving the Dotfiles Problem (And Learning Bash)](https://youtu.be/mSXOYhfDFYo?si=6BHSafkDKpf1OEvq).
+
+## TODO
+
+- Finish install.sh
+- Create zsh.sh install script
+  - Check if zsh is installed. If so, just make it default shell otherwise install and make default
+- Create oh-my-zsh.sh install script
+- Create alacritty.sh install script
+  - Make alacritty default terminal
+- Create conda.sh install script
+- Create rlang.sh install script
+- Create julia.sh install script
+- Create nvim.sh install script
+  - Make nvim the VISUAL and EDITOR
+  - See if there's a way to install the packages and their configs automatically
+- Create tmux.sh install script
+  - See if there's a way to install the packages automatically
+- Create firefox.sh install script
+  - Make firefox default browser
+-  Update documentation for the install scripts
+-  Add .condarc
+-  Add .gitconfig
