@@ -5,29 +5,29 @@ require('lazy').setup({
     {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         -- or                            , branch = '0.1.x',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        dependencies = { {'nvim-lua/plenary.nvim'} }
     },
 
     {
         'catppuccin/nvim',
-        as = 'catppuccin',
+        name = 'catppuccin',
         config = function()
             vim.cmd('colorscheme catppuccin')
         end
     },
 
-    {'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}},
+    {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 
     "tpope/vim-fugitive",
     {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
-        requires = {
+        dependencies = {
             -- LSP Support
             {'neovim/nvim-lspconfig'},             -- Required
             {                                      -- Optional
             'williamboman/mason.nvim',
-            run = function()
+            build = function()
                 pcall(vim.cmd, 'MasonUpdate')
             end,
         },
@@ -44,7 +44,7 @@ require('lazy').setup({
 
 {
     'nvim-lualine/lualine.nvim',
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    dependencies = { 'nvim-tree/nvim-web-devicons', lazy = true }
 },
 
 "yuttie/comfortable-motion.vim",
