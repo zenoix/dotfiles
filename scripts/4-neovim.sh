@@ -2,7 +2,7 @@
 
 if ! is_installed "nvim" ; then
     if ask "Install and configure Neovim?" ; then
-        sudo apt-get -qq install neovim -y
+        sudo apt-get install neovim -y
         nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
     fi
 else

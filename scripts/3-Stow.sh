@@ -1,5 +1,5 @@
 #!/bin/zsh
 
 if ! is_installed "stow" && ask "Install GNU Stow?" ; then 
-    sudo apt-get -qq install stow -y
+    sudo apt-get install stow -y
 fi
