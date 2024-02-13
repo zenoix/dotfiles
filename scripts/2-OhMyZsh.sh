@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 if is_installed "zsh" ; then
-    if [ ! -d "$HOME/.oh-my-zsh" ] && [ -z "${ZSH}" ] && 
+    if [ ! -d "$HOME/.oh-my-zsh" ] && [ -z "${ZSH:-}" ] && 
         ask "Install and configure Oh My Zsh?" ; then
 
         if ! is_installed "curl" ; then
