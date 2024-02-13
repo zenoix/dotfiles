@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-sudo apt-get install stow -y
+sudo apt-get -qq install stow -y
