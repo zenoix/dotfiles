@@ -4,12 +4,6 @@
 
 set -eu -o pipefail
 
-if [[ $UID != 0 ]]; then
-    echo "Please run this script with sudo privileges:"
-    echo "sudo $0 $*"
-    exit 1
-fi
-
 function ask() {
     read -p "$1 (Y/n): " response
     [ -z "$response" ] || [ "$response" = "y" ]
