@@ -91,20 +91,17 @@ $ stow .
 
 ## TODO
 
-- Finish install.sh
-- Create zsh.sh install script
-  - Check if zsh is installed. If so, just make it default shell otherwise install and make default
-- Create oh-my-zsh.sh install script
+- Create nvim.sh install script
+  - Make nvim the VISUAL and EDITOR
+  - Fix packer automatic install
+- Create tmux.sh install script
+  - See if there's a way to install the packages automatically
 - Create alacritty.sh install script
   - Make alacritty default terminal
 - Create conda.sh install script
-- Create rlang.sh install script
+  - Find a way to get the latest version from conda download
+- Create R.sh install script
 - Create julia.sh install script
-- Create nvim.sh install script
-  - Make nvim the VISUAL and EDITOR
-  - See if there's a way to install the packages and their configs automatically
-- Create tmux.sh install script
-  - See if there's a way to install the packages automatically
 - Create firefox.sh install script
   - Make firefox default browser
 -  Update documentation for the install scripts
