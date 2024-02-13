@@ -36,10 +36,8 @@ for file in scripts/*; do
             if ask "Make Zsh the default shell?"; then
                 chsh -s $(which zsh)
                 zsh_enabled=true
-                continue
-            else
-                continue
             fi
+            continue
         elif ask "Install and configure ${program}?"; then
             source ${fullpath}
             zsh_enabled=true
