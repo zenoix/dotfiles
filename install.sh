@@ -4,18 +4,15 @@
 
 set -eu -o pipefail
 
-function ask() {
-    read -p "$1 (Y/n): " response
-    [ -z "$response" ] || [ "$response" = "y" ]
-}
+CURR_DIR=$(dirname "$0")
 
-function is_installed() {
-    command -v "$1" &> /dev/null 
-}
+for helper in $CURR_DIR/helpers/*; do
+    source $(realpath $helper)
+done
 
 zsh_enabled=false
 
-for file in scripts/*; do
+for file in $CURR_DIR/scripts/*; do
     fullpath=$(realpath $file)
 
     program=${file#"scripts/"}
