@@ -18,3 +18,5 @@ for file in $CURR_DIR/scripts/*; do
 
     echo
 done
+
+stow .
