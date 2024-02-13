@@ -91,9 +91,10 @@ $ stow .
 
 ## TODO
 
+- Switch nvim packer to lazy
 - Create nvim.sh install script
   - Make nvim the VISUAL and EDITOR
-  - Fix packer automatic install
+  - Find out how to do setup lazy packages from the cli
 - Create tmux.sh install script
   - See if there's a way to install the packages automatically
 - Create alacritty.sh install script
