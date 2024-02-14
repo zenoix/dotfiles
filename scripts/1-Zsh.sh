@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $(basename $SHELL) != "zsh" ]; then
-    if ! is_installed "zsh" && ask "Install Zsh and make it the dault shell?"; then
+    if ! is_installed "zsh" && ask "Install Zsh and make it the default shell?"; then
         sudo apt-get install zsh -y
         echo "Password needed to change shell."
         chsh -s $(which zsh)
