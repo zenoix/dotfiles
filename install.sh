@@ -17,4 +17,5 @@ for file in $CURR_DIR/scripts/*; do
     source ${fullpath}
 done
 
-stow .
+stow . --adopt
+git reset --hard
