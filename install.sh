@@ -17,10 +17,5 @@ for file in $CURR_DIR/scripts/*; do
     source ${fullpath}
 done
 
-stow . --adopt
-git reset --hard
 
-zsh
-source .zshrc
 
-echo "Installation complete. To finalise changes, please log out and log back in again."

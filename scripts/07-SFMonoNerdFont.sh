@@ -9,6 +9,6 @@ echo "Installing SFMono Nerd Font"
 
 cp "$CURR_DIR/assets/SFMono Regular Nerd Font Complete.otf" "$HOME/.fonts"
 
-fc-cache -f -v
+fc-cache -f
 
 echo
