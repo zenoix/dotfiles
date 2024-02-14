@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 if ! is_installed "R" && ask "Install R?" ; then
     # install two helper packages we need
     sudo apt install --no-install-recommends software-properties-common dirmngr
