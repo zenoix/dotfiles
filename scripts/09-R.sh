@@ -11,4 +11,6 @@ if ! is_installed "R" && ask "Install R?" ; then
     sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
 
     sudo apt install --no-install-recommends r-base
+
+    echo
 fi
