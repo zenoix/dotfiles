@@ -19,3 +19,5 @@ done
 
 stow . --adopt
 git reset --hard
+
+source .zshrc
