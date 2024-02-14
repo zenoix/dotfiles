@@ -10,7 +10,7 @@ for helper in $CURR_DIR/helpers/*; do
     source $(realpath $helper)
 done
 
-zsh_enabled=false
+sudo apt update -qq
 
 for file in $CURR_DIR/scripts/*; do
     fullpath=$(realpath $file)
