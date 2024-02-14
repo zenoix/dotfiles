@@ -91,11 +91,6 @@ $ stow .
 
 ## TODO
 
-- Create nvim.sh install script
-  - Find out how to do setup lazy packages from the cli (cleanup file)
-  - `nvim --headless "+Lazy! sync" +qa`
-- Create tmux.sh install script
-  - See if there's a way to install the packages automatically
-- Create R.sh install script
-- Create julia.sh install script
--  Update documentation for the install scripts
+- Figure out how to install nvm with omz
+- Install firefox script 
+- Update documentation for the install scripts
