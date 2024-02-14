@@ -15,8 +15,6 @@ zsh_enabled=false
 for file in $CURR_DIR/scripts/*; do
     fullpath=$(realpath $file)
     source ${fullpath}
-
-    echo
 done
 
 stow .
