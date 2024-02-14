@@ -75,6 +75,7 @@ plugins=(
     zsh-autosuggestions
     copypath
     copyfile
+    nvm
     z
     )
 
