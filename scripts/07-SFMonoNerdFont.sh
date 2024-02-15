@@ -4,7 +4,9 @@ if [ ! -d "$HOME/.fonts" ] ; then
     mkdir $HOME/.fonts
 fi
 
-cp "$CURR_DIR/assets/SFMono Regular Nerd Font Complete.otf" "$HOME/.fonts"
+for font in $CURR_DIR/assets/* ; do
+    cp $(realpath $font) "$HOME/.fonts"
+done
 
 fc-cache -f
 
