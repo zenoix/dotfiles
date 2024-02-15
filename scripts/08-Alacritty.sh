@@ -6,6 +6,8 @@ if ! is_installed "alacritty" && ask "Install Alacritty?"; then
 
     curl https://sh.rustup.rs -sSf | sh -s -- -y
 
+    source "$HOME/.cargo/env"
+
     rustup override set stable
     rustup update stable
 
