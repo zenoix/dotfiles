@@ -6,12 +6,14 @@ return {
 
 		conform.setup({
 			formatters_by_ft = {
+				bash = { "beautysh" },
 				html = { "prettier" },
 				javascript = { "prettier" },
 				json = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				yaml = { "prettier" },
+				zsh = { "beautysh" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
