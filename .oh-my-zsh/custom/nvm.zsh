@@ -1,3 +1,3 @@
-if  ! command -v "node --version" &> /dev/null ; then
+if  ! type node &> /dev/null ; then
     nvm install node
 fi
