@@ -64,58 +64,7 @@ sudo apt install stow
 ```
 
 > [!IMPORTANT]
-> Make sure that the file structure of the dotfiles is the same as it would be in the HOME directory. E.g. if you have a dotfile `/home/user/foo/.bar`, make sure that it's placed in `dotfiles/foo/` 
-
-My dotfiles and structure are shown below.
-
-```
-.
-├── .condarc
-├── .config
-│   ├── alacritty
-│   │   ├── alacritty.yml
-│   │   └── catppuccin
-│   │       ├── catppuccin-frappe.yml
-│   │       ├── catppuccin-latte.yml
-│   │       ├── catppuccin-macchiato.yml
-│   │       └── catppuccin-mocha.yml
-│   ├── nvim
-│   │   ├── init.lua
-│   │   ├── lazy-lock.json
-│   │   └── lua
-│   │       └── zenoix
-│   │           ├── core
-│   │           │   ├── init.lua
-│   │           │   ├── remap.lua
-│   │           │   └── set.lua
-│   │           ├── lazy.lua
-│   │           └── plugins
-│   │               ├── autopairs.lua
-│   │               ├── catppuccin.lua
-│   │               ├── cmp-cmdline.lua
-│   │               ├── init.lua
-│   │               ├── iron.lua
-│   │               ├── lsp
-│   │               │   ├── lspconfig.lua
-│   │               │   └── mason.lua
-│   │               ├── lualine.lua
-│   │               ├── nvim-cmp.lua
-│   │               ├── nvim-r.lua
-│   │               ├── telescope.lua
-│   │               └── treesitter.lua
-│   └── spaceship.zsh
-├── .gitconfig
-├── .oh-my-zsh
-│   └── custom
-│       ├── aliases.zsh
-│       ├── conda.zsh
-│       ├── env.zsh
-│       ├── PATH.zsh
-│       └── tmux.zsh
-├── .stow-local-ignore
-├── .tmux.conf
-└── .zshrc
-```
+> Make sure that the file structure of the dotfiles is the same as it would be in the HOME directory. E.g. if you have a dotfile `/home/user/foo/.bar`, make sure that it's placed in `dotfiles/foo/`
 
 To use GNU stow to setup the sym links, in the dotfiles directory run
 
