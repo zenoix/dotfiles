@@ -11,7 +11,7 @@ x = 5
 y = 5
 
 [window]
-opacity = 0.92
+opacity = 1 
 
 [font]
 size = 11
