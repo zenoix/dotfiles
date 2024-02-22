@@ -29,9 +29,6 @@ return {
 
 		lspconfig["pyright"].setup({
 			capabilities = capabilities,
-			handlers = {
-				["textDocument/publishDiagnostics"] = function() end,
-			},
 		})
 
 		lspconfig["marksman"].setup({
