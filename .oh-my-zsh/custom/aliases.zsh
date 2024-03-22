@@ -1,4 +1,5 @@
 # Replace vi and vim with neovim
+alias nvim="~/bin/nvim/squashfs-root/AppRun"
 alias vi="nvim"
 alias vim="nvim"
 
