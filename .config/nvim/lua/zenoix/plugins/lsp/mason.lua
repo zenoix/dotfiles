@@ -30,6 +30,7 @@ return {
 				"lua_ls",
 				"pyright",
 				"r_language_server",
+				"taplo",
 			},
 
 			automatic_installation = true,
