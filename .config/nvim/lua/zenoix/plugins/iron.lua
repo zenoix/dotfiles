@@ -9,13 +9,13 @@ return {
 				-- Whether a repl should be discarded or not
 				scratch_repl = true,
 				-- Your repl definitions come here
-				repl_definition = {
-					python = {
-						-- Can be a table or a function that
-						-- returns a table (see below)
-						command = { "python" },
-					},
-				},
+				-- repl_definition = {
+				-- 	python = {
+				-- 		-- Can be a table or a function that
+				-- 		-- returns a table (see below)
+				-- 		command = { "python" },
+				-- 	},
+				-- },
 				-- How the repl window will be displayed
 				-- See below for more information
 				repl_open_cmd = view.split.vertical.botright(0.5),
