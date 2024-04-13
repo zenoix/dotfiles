@@ -120,6 +120,29 @@ return {
 				margin = 3,
 				noautocmd = true,
 				redraw_on_resize = true,
+				setup = function()
+					vim.api.nvim_create_autocmd("User", {
+						pattern = "AlphaReady",
+						desc = "hide cursor for alpha",
+						callback = function()
+							local hl = vim.api.nvim_get_hl_by_name("Cursor", true)
+							hl.blend = 100
+							vim.api.nvim_set_hl(0, "Cursor", hl)
+							vim.opt.guicursor = "a:Cursor/lCursor"
+						end,
+					})
+					vim.api.nvim_create_autocmd("BufUnload", {
+						buffer = 0,
+						desc = "show cursor after alpha",
+						callback = function()
+							print("Callback ran")
+							local hl = vim.api.nvim_get_hl_by_name("Cursor", true)
+							hl.blend = nil
+							vim.api.nvim_set_hl(0, "Cursor", hl)
+							vim.opt.guicursor = "n-v-c-sm-i-ci-ve:block,r-cr-o:hor20"
+						end,
+					})
+				end,
 			},
 		}
 
