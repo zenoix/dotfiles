@@ -7,8 +7,6 @@ return {
 		local dashboard = require("alpha.themes.dashboard")
 
 		Header = {
-			"                               ",
-			"                               ",
 			"       ▄▀▀▀▀▀▀▀▀▀▀▄▄           ",
 			"     ▄▀▀░░░░░░░░░░░░░▀▄        ",
 			"   ▄▀░░░░░░░░░░░░░░░░░░▀▄      ",
@@ -30,8 +28,6 @@ return {
 			"   ▐▌░░░░░░░░░░▀▄░░░░░░▄▀      ",
 			"  ▄▀░░░▄▀░░░░░░░░▀▀▀▀█▀        ",
 			" ▀░░░▄▀░░░░░░░░░░▀░░░▀▀▀▀▄▄▄▄▄ ",
-			"                               ",
-			"                               ",
 		}
 
 		require("alpha.term")
@@ -53,7 +49,6 @@ return {
 			val = Header,
 			opts = {
 				position = "center",
-				hl = "Type",
 			},
 		}
 
@@ -84,9 +79,9 @@ return {
 		}
 
 		Footer = {
-			"                ",
-			"It is what it is",
-			"                ",
+			"                                  ",
+			"Everything not saved will be lost.",
+			"                                  ",
 		}
 
 		local footer = {
@@ -106,16 +101,16 @@ return {
 
 		local opts = {
 			layout = {
-				{ type = "padding", val = 4 },
+				{ type = "padding", val = 3 },
 				section.header,
 				{ type = "padding", val = 1 },
 				section.buttons,
 				{ type = "padding", val = 1 },
 				section.footer,
-				{ type = "padding", val = 4 },
+				{ type = "padding", val = 3 },
 			},
 			opts = {
-				margin = 3,
+				margin = 2,
 				noautocmd = true,
 				redraw_on_resize = true,
 				setup = function()
