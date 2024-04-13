@@ -69,7 +69,7 @@ return {
 		local buttons = {
 			type = "group",
 			val = {
-				dashboard.button("n", "  New File    ", ":ene <BAR> startinsert <CR>"),
+				dashboard.button("n", "  New File    ", ":enew<CR>"),
 				dashboard.button("f", "  Find File   ", ":Telescope find_files<CR>"),
 				dashboard.button("t", "  Find Text   ", ":Telescope live_grep<CR>"),
 				dashboard.button("r", "  Recent Files", ":Telescope oldfiles<CR>"),
