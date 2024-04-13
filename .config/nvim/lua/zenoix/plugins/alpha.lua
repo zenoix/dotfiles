@@ -135,11 +135,10 @@ return {
 						buffer = 0,
 						desc = "show cursor after alpha",
 						callback = function()
-							print("Callback ran")
 							local hl = vim.api.nvim_get_hl_by_name("Cursor", true)
 							hl.blend = nil
 							vim.api.nvim_set_hl(0, "Cursor", hl)
-							vim.opt.guicursor = "n-v-c-sm-i-ci-ve:block,r-cr-o:hor20"
+							vim.opt.guicursor = "n-v-c-sm-i-ci-ve-o:block,r-cr:hor20"
 						end,
 					})
 				end,
