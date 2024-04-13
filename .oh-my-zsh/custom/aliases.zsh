@@ -1,8 +1,3 @@
-# If running WSL, alias nvim to the WSL's one
-if uname -r | grep -q "Microsoft" ; then
-    alias nvim="~/bin/nvim/squashfs-root/AppRun"
-end
-
 # Replace vi and vim with neovim
 alias vi="nvim"
 alias vim="nvim"
