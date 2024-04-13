@@ -57,14 +57,12 @@ return {
 			},
 		}
 
-		-- local default_header = nil
-		-- local ret = "command -v chafa"
-
-		-- if ret == 0 then
-		-- 	default_header = dynamic_header
-		-- else
-		-- 	default_header = text_header
-		-- end
+		local default_header = nil
+		if vim.fn.executable("chafa") == 1 then
+			default_header = dynamic_header
+		else
+			default_header = text_header
+		end
 
 		local buttons = {
 			type = "group",
@@ -101,7 +99,7 @@ return {
 		}
 
 		local section = {
-			header = dynamic_header,
+			header = default_header,
 			buttons = buttons,
 			footer = footer,
 		}
