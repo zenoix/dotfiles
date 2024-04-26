@@ -39,12 +39,7 @@ return {
 			on_attach = on_attach,
 		})
 
-		lspconfig["pyright"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		lspconfig["jedi_language_server"].setup({
+		lspconfig["ruff_lsp"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
