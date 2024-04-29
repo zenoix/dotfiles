@@ -39,6 +39,7 @@ return {
 			ensure_installed = {
 				"beautysh",
 				"hadolint",
+				"isort",
 				"prettier",
 				"ruff",
 				"stylua",
