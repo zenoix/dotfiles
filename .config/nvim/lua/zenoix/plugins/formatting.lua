@@ -11,7 +11,7 @@ return {
 				javascript = { "prettier" },
 				json = { "prettier" },
 				lua = { "stylua" },
-				python = { "ruff_lsp" },
+				python = { "ruff_lsp", "isort" },
 				yaml = { "prettier" },
 				zsh = { "beautysh" },
 			},
