@@ -29,11 +29,6 @@ return {
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
-		lspconfig["basedpyright"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
 		lspconfig["bashls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
@@ -42,6 +37,16 @@ return {
 		lspconfig["r_language_server"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
+		})
+
+		lspconfig["ruff_lsp"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			init_options = {
+				settings = {
+					args = { "--config", "$HOME/.config/ruff.toml" },
+				},
+			},
 		})
 
 		lspconfig["marksman"].setup({
