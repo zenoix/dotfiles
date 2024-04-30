@@ -24,11 +24,11 @@ return {
 
 		mason_lspconfig.setup({
 			ensure_installed = {
+				"basedpyright",
 				"bashls",
 				"marksman",
 				"lua_ls",
 				"r_language_server",
-				"ruff_lsp",
 				"taplo",
 			},
 
@@ -38,6 +38,7 @@ return {
 		mason_tool_installer.setup({
 			ensure_installed = {
 				"beautysh",
+				"black",
 				"hadolint",
 				"isort",
 				"prettier",
