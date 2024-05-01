@@ -19,6 +19,15 @@ return {
 			keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 		end
 
+		local on_attach_mod = function(client, bufnr)
+			client.server_capabilities.completionProvider = false
+
+			opts.buffer = bufnr
+
+			opts.desc = "Smart rename"
+			keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+		end
+
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
 		-- Change the Diagnostic symbols in the sign column (gutter)
@@ -32,6 +41,10 @@ return {
 		lspconfig["bashls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
+		})
+
+		lspconfig["jedi_language_server"].setup({
+			on_attach = on_attach_mod,
 		})
 
 		lspconfig["r_language_server"].setup({

@@ -27,6 +27,7 @@ return {
 				"bashls",
 				"marksman",
 				"lua_ls",
+				"pyright",
 				"r_language_server",
 				"ruff_lsp",
 				"taplo",
