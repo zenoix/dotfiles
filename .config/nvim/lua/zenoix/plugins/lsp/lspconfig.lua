@@ -44,7 +44,7 @@ return {
 			on_attach = on_attach,
 			init_options = {
 				settings = {
-					args = { "--config", "$HOME/.config/ruff.toml" },
+					args = {},
 				},
 			},
 		})
