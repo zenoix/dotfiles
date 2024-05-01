@@ -38,9 +38,7 @@ return {
 		mason_tool_installer.setup({
 			ensure_installed = {
 				"beautysh",
-				"black",
 				"hadolint",
-				"isort",
 				"prettier",
 				"ruff",
 				"stylua",
