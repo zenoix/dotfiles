@@ -2,3 +2,4 @@
 .config/tmux/plugins
 
 .config/spaceship.zsh.zwc
+.config/configstore
