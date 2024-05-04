@@ -16,9 +16,10 @@ plugins=(
 )
 
 
-for file in $HOME/dotfiles/.config/zsh/*; do
+for file in $HOME/.zsh/*.zsh; do
     source $(realpath $file)
 done
 
+source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
