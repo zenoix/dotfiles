@@ -8,3 +8,8 @@ fi
 
 
 # <<< juliaup initialize <<<
+
+if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
+    path=("$HOME/.local/bin" $path)
+    export PATH
+fi
