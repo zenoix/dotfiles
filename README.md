@@ -12,7 +12,7 @@ It includes the files for the following:
 - Julia
 - SF Mono Nerd Font by [epk](https://github.com/epk/SF-Mono-Nerd-Font)
 
-GNU stow is used to keep all the dotfiles in one directory, allowing for easier version control and maintenance and easier symlinking. 
+GNU stow is used to keep all the dotfiles in one directory, allowing for easier version control, maintenance, and easier symlinking. 
 
 ## Installation
 
