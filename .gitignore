@@ -3,3 +3,6 @@
 
 .config/spaceship.zsh.zwc
 .config/configstore
+
+.zsh/zsh-autosuggestions
+
