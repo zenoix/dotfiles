@@ -10,6 +10,18 @@ add_newline = true
 # A continuation prompt that displays two filled in arrows
 continuation_prompt = '▶▶ '
 
+[aws]
+symbol = "  "
+
+[battery]
+disabled = true
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
 # Replace the '❯' symbol in the prompt with '➜' and change vimcmd symbol
 [character]
 success_symbol = '[➜](bold green)'
@@ -22,12 +34,140 @@ vimcmd_visual_symbol = '[V](bold yellow)'
 [cmd_duration]
 disabled = true
 
-# Change directory configs
+[conda]
+ignore_base = false
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
 [directory]
 truncation_length = 2
+truncate_to_repo = false
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fennel]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Gentoo = " "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+openSUSE = " "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[python]
+symbol = " "
 
 [rlang]
 symbol = '🅡 '
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[sudo]
+disabled = false
+
+[swift]
+symbol = " "
+
+[zig]
+symbol = " "
+
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
