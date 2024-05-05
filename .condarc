@@ -1,2 +1,3 @@
 auto_activate_base: false
 env_prompt: ''
+changeps1: false
