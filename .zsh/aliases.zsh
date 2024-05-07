@@ -17,3 +17,6 @@ alias tor-browser="cd /usr/lib/tor-browser/;./start-tor-browser.desktop;cd -"
 
 # Add clamscan alias
 alias virusscan="clamscan -r -i"
+
+# Replace type with with type -a
+alias type="type -a"
