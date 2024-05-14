@@ -11,12 +11,5 @@ alias cat="batcat"
 # Add python to python3
 alias python="python3"
 
-# Run tor browser aliases
-alias tor="cd /usr/lib/tor-browser/;./start-tor-browser.desktop;cd -"
-alias tor-browser="cd /usr/lib/tor-browser/;./start-tor-browser.desktop;cd -"
-
-# Add clamscan alias
-alias virusscan="clamscan -r -i"
-
 # Replace type with with type -a
 alias type="type -a"
