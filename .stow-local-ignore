@@ -21,8 +21,3 @@ _darcs
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
-
-assets
-helpers
-scripts
-install\.sh  # install script 
