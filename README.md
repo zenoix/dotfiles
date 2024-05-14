@@ -2,15 +2,21 @@
 
 This directory contains the dotfiles for the main tools I use on my Pop OS system.
 
-It includes the files for the following:
-- Zsh and Oh My Zsh
+It includes the dotfiles for the following:
+- Zsh and Starship prompt
+- Bat
+- Zoxide
+- Zsh-autosuggestions
+- Node version manager
 - Alacritty
-- Neovim (using lazy.nvim)
-- tmux (using TPM)
+- Neovim (with lazy.nvim)
+- tmux (with TPM)
 - Miniconda
 - R
 - Julia
-- SF Mono Nerd Font by [epk](https://github.com/epk/SF-Mono-Nerd-Font)
+- Ruff
+and some other useful tools.
+
 
 GNU stow is used to keep all the dotfiles in one directory, allowing for easier version control, maintenance, and easier symlinking. 
 
@@ -21,41 +27,20 @@ GNU stow is used to keep all the dotfiles in one directory, allowing for easier 
 Ensure you have the following:
 
 - Git
-- A debian based operating system (if using the installation script)
+- A [nerd font](https://www.nerdfonts.com/) or patched font
 
-If you do not have git, you can install it using the following:
-```bash
-$ sudo apt install git-all
-```
 > [!TIP]
-> Cloning this repo to the location where you want to 
+> I designed this repo to be placed in the home (`~/`) directory. If you choose to place it somewhere else, you may have to change some of the configurations.
 
 
-### Using the Installation Script
-I have included a script, `install.sh`, to help with the installation process. It will check to see if the applications are installed and if they are not, will prompt you asking if you'd like to install them.
-
-> [!WARNING]
-> The script assumes that none of the tools mentioned earlier are installed. If they are, please backup any important files.
-
-If you would prefer to do it manually, or have more control over what gets installed/configured, refer to the next section *Manually Setting Up the Dotfiles*.
-
-#### Getting Started
-
-To run the script, enter the following into your terminal
-
-```bash
-$ ./install.sh
-```
-and follow the prompts that appear.
-
-### Manually Setting Up the Dotfiles
+### Setting Up the Dotfiles
 
 If you do not want to use GNU stow or would like to maintain all of your dotfiles yourself, you can copy whatever files you like from this repository. 
 
 Otherwise, if you'd like to use GNU stow to maintain all of your sym links for you, you can replace or add any of the files with ones you already have and would like to keep.
 
 > [!WARNING]
-> Once your files have been added to the dotfiles folder, make sure you delete the file from its original location. This is due to stow not being able to create a sym link if the file is there. If you run `stow . --adopt`, it will **replace** the file in the dotfile folder with the one in the original location which will overwrite any changes to the dotfile files.
+> Once your files have been added to the dotfiles folder, make sure you delete the file from its original location. This is due to stow not being able to create a symlink if the file is there. If you run `stow . --adopt`, it will **replace** the file in the dotfile folder with the one in the original location which will overwrite any changes to the dotfile files.
 
 You can install GNU stow by running
 
@@ -66,7 +51,7 @@ sudo apt install stow
 > [!IMPORTANT]
 > Make sure that the file structure of the dotfiles is the same as it would be in the HOME directory. E.g. if you have a dotfile `/home/user/foo/.bar`, make sure that it's placed in `dotfiles/foo/`
 
-To use GNU stow to setup the sym links, in the dotfiles directory run
+To use GNU stow to setup the symlinks, in the dotfiles directory run
 
 ```
 $ stow .
@@ -81,15 +66,9 @@ If you'd like to ignore directories or files from being symlinked by stow, you c
 ## Usage
 
 - Replace the `.gitconfig` with your config.
-- Run `stow .` whenever you want to create or update the sym links.
+- Run `stow .` whenever you want to create or update the symlinks.
 
 ## References
 
 - Idea and methodology is based on Dreams of Autonomy's video [Stow has forever changed the way I manage my dotfiles](https://www.youtube.com/watch?v=y6XCebnB9gs).
 
-- Install scripts were inspired by Bartek Spitza's video [Solving the Dotfiles Problem (And Learning Bash)](https://youtu.be/mSXOYhfDFYo?si=6BHSafkDKpf1OEvq).
-
-## TODO
-
-- Figure out how to install nvm with omz
-- Install firefox script 
