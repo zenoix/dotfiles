@@ -62,16 +62,16 @@ return {
 		local buttons = {
 			type = "group",
 			val = {
-				dashboard.button("n", "  New File    ", ":enew<CR>"),
-				dashboard.button("f", "  Find File   ", ":Telescope find_files<CR>"),
-				dashboard.button("t", "  Find Text   ", ":Telescope live_grep<CR>"),
+				dashboard.button("n", "󰈔  New File    ", ":enew<CR>"),
+				dashboard.button("f", "  Find File   ", ":Telescope find_files<CR>"),
+				dashboard.button("t", "󰊄  Find Text   ", ":Telescope live_grep<CR>"),
 				dashboard.button("r", "  Recent Files", ":Telescope oldfiles<CR>"),
 				dashboard.button(
 					"c",
-					"  Nvim Config ",
+					"  Nvim Config ",
 					":cd $HOME/dotfiles/.config/nvim | Telescope find_files<CR>"
 				),
-				dashboard.button("q", "  Quit        ", ":qa<CR>"),
+				dashboard.button("q", "󰅙  Quit        ", ":qa<CR>"),
 			},
 			opts = {
 				spacing = 1,
