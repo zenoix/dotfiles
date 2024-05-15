@@ -13,3 +13,6 @@ alias python="python3"
 
 # Replace type with with type -a
 alias type="type -a"
+
+# Replace mkdir with mkdir -p
+alias mkdir="mkdir -p"
