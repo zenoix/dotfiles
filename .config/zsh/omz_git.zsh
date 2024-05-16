@@ -6,11 +6,11 @@ autoload -Uz is-at-least
 # it's not a symbolic ref, but in a Git repo.
 function git_current_branch() {
     local ref
-    ref=$(__git_prompt_git symbolic-ref --quiet HEAD 2> /dev/null)
+    ref=$(git symbolic-ref --quiet HEAD 2> /dev/null)
     local ret=$?
     if [[ $ret != 0 ]]; then
         [[ $ret == 128 ]] && return  # no git repo.
-        ref=$(__git_prompt_git rev-parse --short HEAD 2> /dev/null) || return
+        ref=$(git rev-parse --short HEAD 2> /dev/null) || return
     fi
     echo ${ref#refs/heads/}
 }
@@ -31,7 +31,7 @@ function git_current_user_email() {
 # Usage example: $(git_repo_name)
 function git_repo_name() {
     local repo_path
-    if repo_path="$(__git_prompt_git rev-parse --show-toplevel 2>/dev/null)" && [[ -n "$repo_path" ]]; then
+    if repo_path="$(git rev-parse --show-toplevel 2>/dev/null)" && [[ -n "$repo_path" ]]; then
         echo ${repo_path:t}
     fi
 }
