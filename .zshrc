@@ -4,7 +4,6 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle -e ':completion:*:default' list-colors 'reply=("${PREFIX:+=(#bi)($PREFIX:t)(?)*==02=01}:${(s.:.)LS_COLORS}")'
 
 source $HOME/dotfiles/tools/dotup.sh
-source $HOME/dotfiles/tools/upgrade.sh
 
 for file in $HOME/dotfiles/.config/zsh/*.zsh; do
     source $(realpath $file)
