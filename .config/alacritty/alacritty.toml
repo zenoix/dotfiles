@@ -1,9 +1,9 @@
 import = [
-  # uncomment the flavour you want below:
-  # "~/.config/alacritty/catppuccin/catppuccin-latte.toml"
-  # "~/.config/alacritty/catppuccin/catppuccin-frappe.toml"
-  # "~/.config/alacritty/catppuccin/catppuccin-macchiato.toml"
-    "~/.config/alacritty/catppuccin/catppuccin-mocha.toml"
+    # uncomment the flavour you want below:
+    # "~/.config/alacritty/catppuccin/catppuccin-latte.toml"
+    # "~/.config/alacritty/catppuccin/catppuccin-frappe.toml"
+    # "~/.config/alacritty/catppuccin/catppuccin-macchiato.toml"
+    "~/.config/alacritty/catppuccin/catppuccin-mocha.toml",
 ]
 
 [window.padding]
@@ -11,25 +11,25 @@ x = 5
 y = 5
 
 [window]
-opacity = 1 
+opacity = 1
 
 [font]
 size = 11
 
 [font.normal]
-family = "SFMono Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "SFMono Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "SFMono Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Italic"
 
 [font.bold_italic]
-family = "SFMono Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Bold Italic"
 
 [selection]
@@ -41,4 +41,3 @@ blinking = "On"
 
 [env]
 TERM = "xterm-256color"
-
