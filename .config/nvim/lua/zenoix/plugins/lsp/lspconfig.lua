@@ -92,5 +92,8 @@ return {
 				},
 			},
 		})
+
+		keymap.set("n", "<leader>gd", vim.lsp.buf.definition, opts)
+		keymap.set("n", "<leader>gr", vim.lsp.buf.references, opts)
 	end,
 }
