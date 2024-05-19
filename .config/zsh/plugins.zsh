@@ -133,6 +133,7 @@ function copyfile {
 }
 
 
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Zoxide
 eval "$(zoxide init zsh)"

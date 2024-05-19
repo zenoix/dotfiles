@@ -19,6 +19,8 @@ zstyle -e ':completion:*:default' list-colors 'reply=("${PREFIX:+=(#bi)($PREFIX:
 
 source $HOME/dotfiles/tools/dotup.sh
 
+source ~/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+
 for file in $HOME/dotfiles/.config/zsh/*.zsh; do
     source $(realpath $file)
 done
