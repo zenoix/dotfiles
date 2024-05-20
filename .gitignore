@@ -5,3 +5,5 @@
 
 .config/zsh/zsh-autosuggestions
 
+.config/nvim/db_ui
+
