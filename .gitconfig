@@ -7,3 +7,5 @@
 	helper = /mnt/c/Users/jeffwang2/AppData/Local/Programs/Git/mingw64/bin/git-credential-manager.exe
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[alias]
+    tree = log --all --graph --decorate
