@@ -1,0 +1,8 @@
+include catppuccin-mocha
+# include gruvbox-dark
+
+set selection-clipboard clipboard
+
+set guioptions "none"
+
+set window-title-basename "true"
