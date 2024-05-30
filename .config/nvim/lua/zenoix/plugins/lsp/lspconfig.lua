@@ -37,31 +37,36 @@ return {
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
-		lspconfig["bashls"].setup({
+		lspconfig.bashls.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
 
-		lspconfig["jedi_language_server"].setup({
+		lspconfig.jedi_language_server.setup({
 			on_attach = on_attach_mod,
 		})
 
-		lspconfig["pyright"].setup({
+		lspconfig.pyright.setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			settings = {
+				pyright = {
+					disableOrganizeImports = true,
+				},
+				python = {
+					analysis = {
+						ignore = { "*" },
+					},
+				},
+			},
+		})
+
+		lspconfig.r_language_server.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
 
-		lspconfig["r_language_server"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		lspconfig["ruff"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		lspconfig["ruff_lsp"].setup({
+		lspconfig.ruff.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 			init_options = {
@@ -71,18 +76,18 @@ return {
 			},
 		})
 
-		lspconfig["marksman"].setup({
+		lspconfig.marksman.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
 
-		lspconfig["taplo"].setup({
+		lspconfig.taplo.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
 
 		-- configure lua server (with special settings)
-		lspconfig["lua_ls"].setup({
+		lspconfig.lua_ls.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 			settings = { -- custom settings for lua

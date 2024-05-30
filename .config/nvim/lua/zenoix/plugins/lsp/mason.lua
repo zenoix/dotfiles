@@ -30,7 +30,7 @@ return {
 				"lua_ls",
 				"pyright",
 				"r_language_server",
-				"ruff_lsp",
+				"ruff",
 				"taplo",
 			},
 
@@ -42,7 +42,6 @@ return {
 				"beautysh",
 				"hadolint",
 				"prettier",
-				"ruff",
 				"stylua",
 			},
 		})
