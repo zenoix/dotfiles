@@ -3,6 +3,7 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
+		"ray-x/lsp_signature.nvim",
 	},
 	config = function()
 		local lspconfig = require("lspconfig")
@@ -22,6 +23,16 @@ return {
 				keymap.set("n", "<leader>gd", vim.lsp.buf.definition, opts)
 				keymap.set("n", "<leader>gr", vim.lsp.buf.references, opts)
 				keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
+
+				require("lsp_signature").on_attach({
+					bind = true,
+					close_timeout = 4000,
+					hint_prefix = " ",
+					handler_opts = {
+						border = "rounded",
+					},
+					timer_interval = 100,
+				}, ev.buf)
 			end,
 		})
 
