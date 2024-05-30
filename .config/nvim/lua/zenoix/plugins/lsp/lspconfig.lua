@@ -31,7 +31,6 @@ return {
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
 		-- Change the Diagnostic symbols in the sign column (gutter)
-		-- (not in youtube nvim video)
 		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
 		for type, icon in pairs(signs) do
 			local hl = "DiagnosticSign" .. type
@@ -47,7 +46,17 @@ return {
 			on_attach = on_attach_mod,
 		})
 
+		lspconfig["pyright"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
 		lspconfig["r_language_server"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
+		lspconfig["ruff"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
@@ -95,5 +104,6 @@ return {
 
 		keymap.set("n", "<leader>gd", vim.lsp.buf.definition, opts)
 		keymap.set("n", "<leader>gr", vim.lsp.buf.references, opts)
+		keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
 	end,
 }
