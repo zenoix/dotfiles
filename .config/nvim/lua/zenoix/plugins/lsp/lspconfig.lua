@@ -11,22 +11,19 @@ return {
 
 		local keymap = vim.keymap
 
-		local opts = {}
-		local on_attach = function(client, bufnr)
-			opts.buffer = bufnr
+		vim.api.nvim_create_autocmd("LspAttach", {
+			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
+			callback = function(ev)
+				vim.bo[ev.buf].omnifunc = nil
 
-			opts.desc = "Smart rename"
-			keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
-		end
-
-		local on_attach_mod = function(client, bufnr)
-			client.server_capabilities.completionProvider = false
-
-			opts.buffer = bufnr
-
-			opts.desc = "Smart rename"
-			keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
-		end
+				local opts = { buffer = ev.buf }
+				keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+				keymap.set("n", "K", vim.lsp.buf.hover, opts)
+				keymap.set("n", "<leader>gd", vim.lsp.buf.definition, opts)
+				keymap.set("n", "<leader>gr", vim.lsp.buf.references, opts)
+				keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
+			end,
+		})
 
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
@@ -39,12 +36,10 @@ return {
 
 		lspconfig.bashls.setup({
 			capabilities = capabilities,
-			on_attach = on_attach,
 		})
 
 		lspconfig.pyright.setup({
 			capabilities = capabilities,
-			on_attach = on_attach,
 			settings = {
 				pyright = {
 					disableOrganizeImports = true,
@@ -59,12 +54,10 @@ return {
 
 		lspconfig.r_language_server.setup({
 			capabilities = capabilities,
-			on_attach = on_attach,
 		})
 
 		lspconfig.ruff.setup({
 			capabilities = capabilities,
-			on_attach = on_attach,
 			init_options = {
 				settings = {
 					args = {},
@@ -74,18 +67,15 @@ return {
 
 		lspconfig.marksman.setup({
 			capabilities = capabilities,
-			on_attach = on_attach,
 		})
 
 		lspconfig.taplo.setup({
 			capabilities = capabilities,
-			on_attach = on_attach,
 		})
 
 		-- configure lua server (with special settings)
 		lspconfig.lua_ls.setup({
 			capabilities = capabilities,
-			on_attach = on_attach,
 			settings = { -- custom settings for lua
 				Lua = {
 					-- make the language server recognize "vim" global
@@ -102,9 +92,5 @@ return {
 				},
 			},
 		})
-
-		keymap.set("n", "<leader>gd", vim.lsp.buf.definition, opts)
-		keymap.set("n", "<leader>gr", vim.lsp.buf.references, opts)
-		keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
 	end,
 }
