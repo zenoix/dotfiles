@@ -8,10 +8,10 @@ return {
 			prompt_prefix = " ",
 			path_display = { "smart" },
 			dynamic_preview_title = true,
-			layout_config = {
-				prompt_position = "bottom",
-				height = 0.95,
-			},
+			-- layout_config = {
+			-- 	prompt_position = "bottom",
+			-- 	height = 0.95,
+			-- },
 			mappings = {
 				n = {
 					["q"] = "close",
