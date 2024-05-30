@@ -25,7 +25,6 @@ return {
 		mason_lspconfig.setup({
 			ensure_installed = {
 				"bashls",
-				"jedi_language_server",
 				"marksman",
 				"lua_ls",
 				"pyright",

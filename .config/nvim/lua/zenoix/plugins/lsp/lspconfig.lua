@@ -42,10 +42,6 @@ return {
 			on_attach = on_attach,
 		})
 
-		lspconfig.jedi_language_server.setup({
-			on_attach = on_attach_mod,
-		})
-
 		lspconfig.pyright.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
