@@ -45,22 +45,20 @@ return {
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
-		lspconfig.bashls.setup({
-			capabilities = capabilities,
-		})
-
-		lspconfig.pyright.setup({
+		lspconfig.basedpyright.setup({
 			capabilities = capabilities,
 			settings = {
-				pyright = {
+				basedpyright = {
 					disableOrganizeImports = true,
-				},
-				python = {
 					analysis = {
 						ignore = { "*" },
 					},
 				},
 			},
+		})
+
+		lspconfig.bashls.setup({
+			capabilities = capabilities,
 		})
 
 		lspconfig.r_language_server.setup({

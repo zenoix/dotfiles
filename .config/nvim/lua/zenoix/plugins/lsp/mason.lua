@@ -24,10 +24,10 @@ return {
 
 		mason_lspconfig.setup({
 			ensure_installed = {
+				"basedpyright",
 				"bashls",
 				"marksman",
 				"lua_ls",
-				"pyright",
 				"r_language_server",
 				"ruff",
 				"taplo",
