@@ -26,6 +26,7 @@ return {
 			ensure_installed = {
 				"basedpyright",
 				"bashls",
+				"gopls",
 				"marksman",
 				"lua_ls",
 				"r_language_server",

@@ -61,6 +61,10 @@ return {
 			capabilities = capabilities,
 		})
 
+		lspconfig.gopls.setup({
+			capabilities = capabilities,
+		})
+
 		lspconfig.r_language_server.setup({
 			capabilities = capabilities,
 		})
