@@ -1,7 +1,7 @@
 return {
 	"kkoomen/vim-doge",
 	event = { "BufReadPre", "BufNewFile" },
-	config = function()
+	build = function()
 		vim.cmd([[call doge#install()]])
 	end,
 }
