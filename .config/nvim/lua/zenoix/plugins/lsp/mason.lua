@@ -24,7 +24,6 @@ return {
 
 		mason_lspconfig.setup({
 			ensure_installed = {
-				"basedpyright",
 				"bashls",
 				"gopls",
 				"marksman",

@@ -45,18 +45,6 @@ return {
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
-		lspconfig.basedpyright.setup({
-			capabilities = capabilities,
-			settings = {
-				basedpyright = {
-					disableOrganizeImports = true,
-					analysis = {
-						ignore = { "*" },
-					},
-				},
-			},
-		})
-
 		lspconfig.bashls.setup({
 			capabilities = capabilities,
 		})
