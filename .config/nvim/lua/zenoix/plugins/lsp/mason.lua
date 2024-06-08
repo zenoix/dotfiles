@@ -40,6 +40,7 @@ return {
 			ensure_installed = {
 				"beautysh",
 				"goimports-reviser",
+				"golangci-lint",
 				"hadolint",
 				"prettier",
 				"stylua",
