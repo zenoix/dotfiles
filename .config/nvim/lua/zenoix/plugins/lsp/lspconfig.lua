@@ -49,6 +49,10 @@ return {
 			capabilities = capabilities,
 		})
 
+		lspconfig.jedi_language_server.setup({
+			capabilities = capabilities,
+		})
+
 		lspconfig.gopls.setup({
 			capabilities = capabilities,
 		})
@@ -71,6 +75,10 @@ return {
 		})
 
 		lspconfig.taplo.setup({
+			capabilities = capabilities,
+		})
+
+		lspconfig.typos_lsp.setup({
 			capabilities = capabilities,
 		})
 

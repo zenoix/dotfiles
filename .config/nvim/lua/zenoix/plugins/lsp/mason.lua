@@ -26,6 +26,7 @@ return {
 			ensure_installed = {
 				"bashls",
 				"gopls",
+				"jedi_language_server",
 				"marksman",
 				"lua_ls",
 				"r_language_server",
