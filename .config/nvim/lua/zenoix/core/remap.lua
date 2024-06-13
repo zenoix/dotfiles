@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", "<CMD>Oil<CR>")
-vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "<leader>pv", "<CMD>Oil --float<CR>")
+vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
 
 -- Keep cursor still when connecting lines to the end of previous lines
 vim.keymap.set("n", "J", "mzJ`z")
