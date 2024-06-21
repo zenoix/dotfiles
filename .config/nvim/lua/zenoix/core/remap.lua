@@ -9,6 +9,10 @@ vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
+-- Keep cursor in the middle of screen when searching for text
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
 -- When pasting over something, keep the original thing in the clipboard
 vim.keymap.set("x", "<leader>p", '"_dP')
 
