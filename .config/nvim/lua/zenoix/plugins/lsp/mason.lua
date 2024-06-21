@@ -25,6 +25,7 @@ return {
 		mason_lspconfig.setup({
 			ensure_installed = {
 				"bashls",
+				"golangci_lint_ls",
 				"gopls",
 				"jedi_language_server",
 				"marksman",

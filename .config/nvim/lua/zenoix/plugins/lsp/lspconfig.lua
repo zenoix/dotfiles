@@ -53,6 +53,11 @@ return {
 			capabilities = capabilities,
 		})
 
+		lspconfig.golangci_lint_ls.setup({
+			capabilities = capabilities,
+			filetypes = { "go", "gomod", "gowork", "gotmpl" },
+		})
+
 		lspconfig.gopls.setup({
 			capabilities = capabilities,
 		})
