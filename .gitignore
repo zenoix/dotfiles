@@ -8,3 +8,5 @@
 .config/nvim/db_ui
 
 .config/zsh/plugins
+
+.config/nvim/lazy-lock.json
