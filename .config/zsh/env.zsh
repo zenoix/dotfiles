@@ -4,3 +4,5 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 export GOPATH=$HOME/go
+
+export BAT_THEME="Catppuccin Mocha"
