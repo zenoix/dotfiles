@@ -1,11 +1,35 @@
 [init]
 	defaultBranch = main
+
 [user]
 	name = Zenoix
 	email = 41812358+Zenoix@users.noreply.github.com
+
 [credential]
 	helper = /mnt/c/Users/jeffwang2/AppData/Local/Programs/Git/mingw64/bin/git-credential-manager.exe
+
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+
 [alias]
     tree = log --all --graph --decorate
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    side-by-side = true
+
+    # delta detects terminal colors automatically; set one of these to disable auto-detection
+    # dark = true
+    # light = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
