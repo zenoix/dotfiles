@@ -1,6 +1,6 @@
 # My dotfiles
 
-This directory contains the dotfiles for the main tools I use on my Arch linux system.
+This directory contains the dotfiles for the main tools I use on my Arch linux system. The dotfiles should work on other Unix-based operating systems.
 
 It includes the dotfiles for the following:
 - Zsh and Starship prompt
@@ -31,8 +31,7 @@ Ensure you have the following:
 - A [nerd font](https://www.nerdfonts.com/) or patched font
 
 > [!TIP]
-> I designed this repo to be placed in the home (`~/`) directory. If you choose to place it somewhere else, you may have to change some of the configurations.
-
+> I designed this repo to be placed in the home (`~/`) directory. If you choose to place it somewhere else, you may have to change some of the configurations. For example, instead of `stow .`, you will need to use the `--dir/-d` flag to point to where you've placed the dotfiles e.g. `stow -d ~/foo/dotfiles -t ~/`.
 
 ### Setting Up the Dotfiles
 
