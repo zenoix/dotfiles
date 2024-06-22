@@ -1,20 +1,18 @@
-# >>> juliaup initialize >>>
+_add_to_path ()
+{
+    echo $1
+    if [[ ":$PATH:" != *":$1:"* ]]; then
+        path=("$1" $path)
+        export PATH
+    fi
+}
 
-# !! Contents within this block are managed by juliaup !!
-if [[ ":$PATH:" != *":$HOME/.juliaup/bin:"* ]]; then
-    path=("$HOME/.juliaup/bin" $path)
-    export PATH
-fi
+_add_to_path $HOME/.juliaup/bin
 
+_add_to_path $HOME/.local/bin
 
-# <<< juliaup initialize <<<
+_add_to_path $GOPATH/bin
 
-if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
-    path=("$HOME/.local/bin" $path)
-    export PATH
-fi
+_add_to_path $HOME/dotfiles/bin
 
-if [[ ":$PATH:" != *":$GOPATH/bin:"* ]]; then
-    path=("$GOPATH/bin" $path)
-    export PATH
-fi
+unset _add_to_path
