@@ -1,6 +1,5 @@
 _add_to_path ()
 {
-    echo $1
     if [[ ":$PATH:" != *":$1:"* ]]; then
         path=("$1" $path)
         export PATH
