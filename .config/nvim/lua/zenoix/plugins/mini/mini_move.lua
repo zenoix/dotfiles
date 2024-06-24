@@ -1,5 +1,6 @@
 return {
 	"echasnovski/mini.move",
+	event = { "BufReadPre", "BufNewFile" },
 	version = false,
 	config = function()
 		require("mini.move").setup({

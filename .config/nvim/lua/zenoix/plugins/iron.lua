@@ -1,5 +1,6 @@
 return {
 	"Vigemus/iron.nvim",
+	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local iron = require("iron.core")
 		local view = require("iron.view")
