@@ -1,6 +1,6 @@
 return {
 	"tpope/vim-dadbod",
-	event = "VeryLazy",
+	cmd = { "DB", "DBUI", "DBUIToggle", "DBUIFindBuffer", "DBUIAddConnection" },
 	opt = true,
 	dependencies = {
 		"kristijanhusak/vim-dadbod-ui",
