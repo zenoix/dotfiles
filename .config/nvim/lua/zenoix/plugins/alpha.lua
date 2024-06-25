@@ -66,11 +66,7 @@ return {
 				dashboard.button("f", "  Find File   ", ":Telescope find_files<CR>"),
 				dashboard.button("t", "󰊄  Find Text   ", ":Telescope live_grep<CR>"),
 				dashboard.button("r", "  Recent Files", ":Telescope oldfiles<CR>"),
-				dashboard.button(
-					"c",
-					"  Nvim Config ",
-					":cd $HOME/dotfiles/.config/nvim | Telescope find_files<CR>"
-				),
+				dashboard.button("c", "  Nvim Config ", ":Telescope find_files search_dirs={'~/dotfiles'}<CR>"),
 				dashboard.button("q", "󰅙  Quit        ", ":qa<CR>"),
 			},
 			opts = {
