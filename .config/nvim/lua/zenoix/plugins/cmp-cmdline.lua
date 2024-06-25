@@ -1,6 +1,5 @@
 return {
 	"hrsh7th/cmp-cmdline",
-	event = { "CmdlineEnter" },
 	config = function()
 		local cmp = require("cmp")
 		-- `:` cmdline setup.
