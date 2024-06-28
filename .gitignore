@@ -10,3 +10,5 @@
 .config/zsh/plugins
 
 .config/nvim/lazy-lock.json
+
+.fzf.zsh
