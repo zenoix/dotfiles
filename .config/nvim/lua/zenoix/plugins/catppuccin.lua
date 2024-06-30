@@ -14,16 +14,20 @@ return {
 			alpha = true,
 			cmp = true,
 			dashboard = true,
+			dap_ui = true,
 			flash = true,
 			gitsigns = true,
 			headlines = true,
 			illuminate = true,
-			indent_blankline = { enabled = true },
+			indent_blankline = { enabled = true, scope_color = "mauve" },
 			leap = true,
 			lsp_trouble = true,
 			mason = true,
 			markdown = true,
-			mini = true,
+			mini = {
+				enabled = true,
+				indentscope_color = "",
+			},
 			native_lsp = {
 				enabled = true,
 				underlines = {
