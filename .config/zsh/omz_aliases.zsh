@@ -209,7 +209,7 @@ alias gwtrm='git worktree remove'
 alias l='ls -lah --group-directories-first'
 alias la='ls -lAh --group-directories-first'
 alias ll='ls -lh --group-directories-first'
-alias ls='ls --color=tty --group-directories-first'
+alias ls='ls -x --color=tty --group-directories-first'
 alias lsa='ls -lah --group-directories-first'
 alias md='mkdir -p'
 alias rd=rmdir
