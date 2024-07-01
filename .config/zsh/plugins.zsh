@@ -13,7 +13,7 @@ eval "$(zoxide init zsh)"
 
 
 # fzf keybindings and fuzzy finding
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f $HOME/dotfiles/.config/zsh/fzf.zsh ] && source $HOME/dotfiles/.config/zsh/fzf.zsh
 eval "$(fzf --zsh)"
 
 # fzf git
