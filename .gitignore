@@ -12,3 +12,5 @@
 .config/nvim/lazy-lock.json
 
 .fzf.zsh
+
+.config/htop/*
