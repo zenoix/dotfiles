@@ -83,7 +83,7 @@ select = [
     "D209", # new-line-after-last-paragraph
     "D210", # surrounding-whitespace
     "D211", # blank-line-before-class
-    "D301", # excape-sequence-in-docstring
+    "D301", # escape-sequence-in-docstring
     "D400", # ends-in-period
     "D401", # non-imperative-mood
     "D403", # first-line-capitalized
