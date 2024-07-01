@@ -7,9 +7,6 @@ palette = "catppuccin_mocha"
 # Inserts a blank line between shell prompts
 add_newline = true
 
-# A continuation prompt that displays two filled in arrows
-continuation_prompt = '▶▶ '
-
 [aws]
 symbol = "  "
 
