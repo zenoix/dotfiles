@@ -12,4 +12,6 @@ _add_to_path $HOME/.local/bin
 
 _add_to_path $HOME/dotfiles/bin
 
+_add_to_path /usr/bin
+
 unset _add_to_path
