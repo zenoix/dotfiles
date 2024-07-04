@@ -1,5 +1,9 @@
 autoload -Uz compinit && compinit
 
+zstyle :compinstall filename "$HOME/dotfiles/.zshrc"
+
+autoload -Uz bashcompinit && bashcompinit
+
 unsetopt beep
 
 HISTFILE=$HOME/.zsh_history

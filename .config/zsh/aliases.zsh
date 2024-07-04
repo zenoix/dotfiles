@@ -16,3 +16,5 @@ alias type="type -a"
 
 # Replace mkdir with mkdir -p
 alias mkdir="mkdir -p"
+
+alias fman="compgen -c | fzf | xargs man"
