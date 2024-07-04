@@ -17,4 +17,6 @@ alias type="type -a"
 # Replace mkdir with mkdir -p
 alias mkdir="mkdir -p"
 
+# Fuzzy finding aliases
 alias fman="compgen -c | fzf | xargs man"
+alias frm="fd . -H | fzf -m --header 'Select files to move with tab then enter' --preview 'bat --style=numbers --color=always {}' | awk '{print $2}' | xargs -r rm"
