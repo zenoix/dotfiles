@@ -16,3 +16,7 @@
 .config/htop/*
 
 .local
+
+# Ignore machine specific dotfiles
+**/walnut_*
+**/work_*
