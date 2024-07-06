@@ -62,6 +62,7 @@ local number_toggle_group = vim.api.nvim_create_augroup("number_toggle", { clear
 
 -- Turn relative line numbers off when entering insert mode
 vim.api.nvim_create_autocmd("InsertEnter", {
+	group = number_toggle_group,
 	callback = function()
 		vim.wo.relativenumber = false
 	end,
@@ -69,28 +70,29 @@ vim.api.nvim_create_autocmd("InsertEnter", {
 
 -- Turn relative line numbers on when leaving insert mode
 vim.api.nvim_create_autocmd("InsertLeave", {
+	group = number_toggle_group,
 	callback = function()
 		vim.wo.relativenumber = true
 	end,
 })
 
--- Turn relative line numbers off when entering visual mode
-vim.api.nvim_create_autocmd("ModeChanged", {
-	group = number_toggle_group,
-	pattern = { "*:[vV\x16]*" },
-	callback = function()
-		vim.wo.relativenumber = false
-	end,
-})
-
--- Turn relative line numbers on when leaving visual mode
-vim.api.nvim_create_autocmd("ModeChanged", {
-	group = number_toggle_group,
-	pattern = { "[vV\x16]*:*" },
-	callback = function()
-		vim.wo.relativenumber = true
-	end,
-})
+-- -- Turn relative line numbers off when entering visual mode
+-- vim.api.nvim_create_autocmd("ModeChanged", {
+-- 	group = number_toggle_group,
+-- 	pattern = { "*:[vV\x16]*" },
+-- 	callback = function()
+-- 		vim.wo.relativenumber = false
+-- 	end,
+-- })
+--
+-- -- Turn relative line numbers on when leaving visual mode
+-- vim.api.nvim_create_autocmd("ModeChanged", {
+-- 	group = number_toggle_group,
+-- 	pattern = { "[vV\x16]*:*" },
+-- 	callback = function()
+-- 		vim.wo.relativenumber = true
+-- 	end,
+-- })
 
 vim.api.nvim_create_autocmd("TextYankPost", {
 	group = vim.api.nvim_create_augroup("highlight_yank", {}),
