@@ -2,8 +2,8 @@
 	defaultBranch = main
 
 [user]
-	name = Zenoix
-	email = 41812358+Zenoix@users.noreply.github.com
+	name = zenoix
+	email = 41812358+zenoix@users.noreply.github.com
 
 [credential]
 	helper = /mnt/c/Users/jeffwang2/AppData/Local/Programs/Git/mingw64/bin/git-credential-manager.exe
