@@ -17,6 +17,7 @@ return {
 			dap_ui = true,
 			flash = true,
 			gitsigns = true,
+			harpoon = true,
 			headlines = true,
 			illuminate = true,
 			indent_blankline = { enabled = true, scope_color = "mauve" },

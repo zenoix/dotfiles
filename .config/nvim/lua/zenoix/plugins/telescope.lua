@@ -4,6 +4,7 @@ return {
 	-- or                              , branch = '0.1.x',
 	dependencies = { "nvim-lua/plenary.nvim" },
 	config = function()
+		require("telescope").load_extension("harpoon")
 		local opts = {
 			defaults = {
 				path_display = { "smart" },
@@ -68,5 +69,6 @@ return {
 		vim.keymap.set("n", "<leader>pb", builtin.buffers, {})
 		vim.keymap.set("n", "<leader>pg", builtin.live_grep, {})
 		vim.keymap.set("n", "<leader>fg", builtin.git_files, {})
+		vim.keymap.set("n", "<leader>pm", ":Telescope harpoon marks<CR>", {})
 	end,
 }
