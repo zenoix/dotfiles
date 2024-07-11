@@ -6,12 +6,14 @@ import = [
     "~/.config/alacritty/catppuccin/catppuccin-mocha.toml",
 ]
 
+[window]
+dynamic_title = false
+blur = true
+opacity = 0.975
+
 [window.padding]
 x = 5
 y = 5
-
-[window]
-opacity = 1
 
 [font]
 size = 11
@@ -37,7 +39,6 @@ save_to_clipboard = true
 
 [cursor.style]
 shape = "block"
-blinking = "On"
 
 [env]
 TERM = "xterm-256color"
