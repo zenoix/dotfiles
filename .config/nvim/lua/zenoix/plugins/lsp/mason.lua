@@ -25,15 +25,17 @@ return {
 
 		mason_lspconfig.setup({
 			ensure_installed = {
+				"basedpyright",
 				"bashls",
 				"golangci_lint_ls",
 				"gopls",
 				"jedi_language_server",
-				"marksman",
 				"lua_ls",
+				"marksman",
 				"r_language_server",
 				"ruff",
 				"taplo",
+				"typos_lsp",
 			},
 
 			automatic_installation = true,
@@ -42,6 +44,7 @@ return {
 		mason_tool_installer.setup({
 			ensure_installed = {
 				"beautysh",
+				"debugpy",
 				"goimports-reviser",
 				"golangci-lint",
 				"hadolint",
