@@ -52,3 +52,10 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
     fd --type=d --hidden --exclude .git . "$1"
 }
+
+# Create custom
+_fzf_complete_ws() {
+    _fzf_complete +m --reverse --header="Select Tmux workspace" -- "$@" < <(
+    fd . $HOME/.tmuxp
+)
+}
