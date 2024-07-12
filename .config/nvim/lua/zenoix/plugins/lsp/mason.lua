@@ -25,6 +25,7 @@ return {
 
 		mason_lspconfig.setup({
 			ensure_installed = {
+				"ansiblels",
 				"basedpyright",
 				"bashls",
 				"golangci_lint_ls",
@@ -43,6 +44,7 @@ return {
 
 		mason_tool_installer.setup({
 			ensure_installed = {
+				"ansible-lint",
 				"beautysh",
 				"debugpy",
 				"goimports-reviser",
