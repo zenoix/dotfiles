@@ -45,6 +45,10 @@ return {
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
+		lspconfig.ansiblels.setup({
+			capabilities = capabilities,
+		})
+
 		lspconfig.bashls.setup({
 			capabilities = capabilities,
 		})
