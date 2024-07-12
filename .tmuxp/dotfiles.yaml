@@ -1,0 +1,12 @@
+session_name: dotfiles
+start_directory: $HOME/dotfiles
+windows:
+  - layout: main-vertical
+    options:
+      main-pane-width: 67%
+    window_name: dotfiles
+    focus: true
+    panes:
+      - shell_command: nvim
+        focus: true
+      - null
