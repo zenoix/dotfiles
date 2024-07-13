@@ -6,6 +6,8 @@ _add_to_path ()
     fi
 }
 
+_add_to_path /usr/local/go/bin
+
 _add_to_path $HOME/.juliaup/bin
 
 _add_to_path $HOME/.local/bin
