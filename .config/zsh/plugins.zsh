@@ -15,7 +15,7 @@ eval "$(zoxide init zsh)"
 
 
 # fzf keybindings and fuzzy finding
-[ -f $ZSH_PLUGINS_DIR/fzf.zsh ] && source $ZSH_PLUGINS_DIR/fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(fzf --zsh)"
 
 # fzf git
