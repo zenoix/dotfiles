@@ -1,11 +1,13 @@
+ZSH_PLUGINS_DIR="/usr/share/zsh/plugins"
+
 # Zsh syntax highlighting
 source $HOME/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH_PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 # Zsh autosuggestions
-source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZSH_PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 # Zoxide
@@ -13,11 +15,11 @@ eval "$(zoxide init zsh)"
 
 
 # fzf keybindings and fuzzy finding
-[ -f $HOME/dotfiles/.config/zsh/fzf.zsh ] && source $HOME/dotfiles/.config/zsh/fzf.zsh
+[ -f $ZSH_PLUGINS_DIR/fzf.zsh ] && source $ZSH_PLUGINS_DIR/fzf.zsh
 eval "$(fzf --zsh)"
 
 # fzf git
-source $HOME/.config/zsh/plugins/fzf-git.sh/fzf-git.sh
+source $ZSH_PLUGINS_DIR/fzf-git.sh/fzf-git.sh
 
 export FZF_DEFAULT_OPTS="
 --border sharp
