@@ -5,7 +5,7 @@ return {
 		local lint = require("lint")
 
 		lint.linters_by_ft = {
-			docker = { "hadolint" },
+			dockerfile = { "hadolint" },
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
