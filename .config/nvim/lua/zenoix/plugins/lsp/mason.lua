@@ -28,6 +28,7 @@ return {
 				"ansiblels",
 				"basedpyright",
 				"bashls",
+				"dockerls",
 				"golangci_lint_ls",
 				"gopls",
 				"jedi_language_server",

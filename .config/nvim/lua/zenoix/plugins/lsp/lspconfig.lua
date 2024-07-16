@@ -53,6 +53,10 @@ return {
 			capabilities = capabilities,
 		})
 
+		lspconfig.dockerls.setup({
+			capabilities = capabilities,
+		})
+
 		lspconfig.jedi_language_server.setup({
 			capabilities = capabilities,
 		})
