@@ -57,11 +57,7 @@ symbol = " "
 [fennel]
 symbol = " "
 
-[fossil_branch]
-symbol = " "
-
 [git_branch]
-symbol = " "
 format = '[$symbol$branch(:$remote_branch)]($style)'
 
 [git_status]
@@ -78,9 +74,6 @@ symbol = " "
 
 [haxe]
 symbol = " "
-
-[hg_branch]
-symbol = " "
 
 [hostname]
 ssh_symbol = " "
@@ -108,9 +101,6 @@ disabled = true
 
 [php]
 symbol = " "
-
-[pijul_channel]
-symbol = " "
 
 [python]
 symbol = " "
