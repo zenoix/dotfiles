@@ -89,6 +89,7 @@ symbol = " "
 
 [lua]
 symbol = " "
+format = " via [$symbol($version )]($style)"
 
 [nix_shell]
 symbol = " "
