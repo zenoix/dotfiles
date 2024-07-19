@@ -114,9 +114,8 @@ return {
 						pattern = "AlphaReady",
 						desc = "hide cursor for alpha",
 						callback = function()
-							local hl = vim.api.nvim_get_hl_by_name("Cursor", true)
-							hl.blend = 100
-							vim.api.nvim_set_hl(0, "Cursor", hl)
+							local hl = vim.api.nvim_get_hl(0, { name = "Cursor" })
+							vim.api.nvim_set_hl(0, "Cursor", vim.tbl_extend("force", hl, { blend = 100 }))
 							vim.opt.guicursor = "a:Cursor/lCursor"
 						end,
 					})
@@ -124,9 +123,8 @@ return {
 						buffer = 0,
 						desc = "show cursor after alpha",
 						callback = function()
-							local hl = vim.api.nvim_get_hl_by_name("Cursor", true)
-							hl.blend = nil
-							vim.api.nvim_set_hl(0, "Cursor", hl)
+							local hl = vim.api.nvim_get_hl(0, { name = "Cursor" })
+							vim.api.nvim_set_hl(0, "Cursor", vim.tbl_extend("force", hl, { blend = nil }))
 							vim.opt.guicursor = "n-v-c-sm-i-ci-ve-o:block,r-cr:hor20"
 						end,
 					})
