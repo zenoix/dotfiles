@@ -6,6 +6,8 @@ palette = "catppuccin_mocha"
 
 # Inserts a blank line between shell prompts
 add_newline = true
+format = """$directory$character"""
+right_format = """$all"""
 
 [aws]
 symbol = "  "
@@ -21,8 +23,6 @@ symbol = " "
 
 # Replace the '❯' symbol in the prompt with '➜' and change vimcmd symbol
 [character]
-success_symbol = '[➜](bold green)'
-error_symbol = '[➜](bold red)'
 vimcmd_symbol = '[V](bold green)'
 vimcmd_replace_one_symbol = '[V](bold purple)'
 vimcmd_replace_symbol = '[V](bold purple)'
@@ -43,6 +43,7 @@ symbol = " "
 [directory]
 truncation_length = 2
 truncate_to_repo = false
+use_os_path_sep = false
 
 [docker_context]
 symbol = " "
@@ -61,6 +62,7 @@ symbol = " "
 
 [git_branch]
 symbol = " "
+format = '[$symbol$branch(:$remote_branch)]($style) '
 
 [golang]
 symbol = " "
@@ -98,42 +100,8 @@ symbol = " "
 [nodejs]
 symbol = " "
 
-[os.symbols]
-Alpaquita = " "
-Alpine = " "
-AlmaLinux = " "
-Amazon = " "
-Android = " "
-Arch = " "
-Artix = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Gentoo = " "
-Kali = " "
-Linux = " "
-Mabox = " "
-Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-openSUSE = " "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-RockyLinux = " "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Void = " "
+[os]
+disabled = true
 
 [php]
 symbol = " "
@@ -143,6 +111,7 @@ symbol = " "
 
 [python]
 symbol = " "
+version_format = 'v${major}.${minor}'
 
 [rlang]
 symbol = '🅡 '
