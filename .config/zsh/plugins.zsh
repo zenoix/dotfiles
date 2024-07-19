@@ -61,3 +61,15 @@ _fzf_complete_ws() {
     fd . $HOME/.tmuxp
 )
 }
+
+# Redefine this function to change the options
+_fzf_git_fzf() {
+  fzf --height=50% --tmux 90%,80% -- \
+    --layout=reverse --multi --min-height=20 --border \
+    --border-label-pos=2 \
+    --color='header:italic:underline,label:blue' \
+    --preview-window='right,50%,border-left' \
+    --bind='ctrl-/:change-preview-window(down,50%,border-top|hidden|)' "$@"
+}
+
+export FZF_GIT_PAGER="less -FX"
