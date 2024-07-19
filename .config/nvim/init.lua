@@ -1,2 +1,1 @@
-require("zenoix.core")
-require("zenoix.lazy")
+require("config.init")

@@ -15,6 +15,10 @@ vim.o.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
 vim.o.expandtab = true
+vim.o.autoindent = true
+
+-- Start scrolling 8 lines before the top/bottom
+vim.o.scrolloff = 8
 
 -- Enable mouse mode
 vim.o.mouse = "a"
@@ -36,6 +40,9 @@ vim.o.smartcase = true
 
 -- Keep signcolumn on by default
 vim.wo.signcolumn = "yes"
+
+-- Turn bell off
+vim.o.belloff = "all"
 
 -- Decrease update time
 vim.o.updatetime = 250
