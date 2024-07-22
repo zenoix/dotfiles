@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", "<CMD>Oil --float<CR>")
+vim.keymap.set("n", "<leader>pv", "<CMD>Oil<CR>")
 vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
 
 -- Keep cursor still when connecting lines to the end of previous lines
@@ -29,4 +29,3 @@ vim.keymap.set("t", "<leader><Esc>", "<C-\\><C-n>")
 -- Move cursor to next and prev line in wrap mode
 vim.keymap.set("n", "j", "gj")
 vim.keymap.set("n", "k", "gk")
-
