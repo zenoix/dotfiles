@@ -67,7 +67,7 @@ return {
 				dashboard.button("t", "󰊄  Find Text   ", ":Telescope live_grep<CR>"),
 				dashboard.button("r", "  Recent Files", ":Telescope oldfiles<CR>"),
 				dashboard.button("c", "  Nvim Config ", ":Telescope find_files search_dirs={'~/dotfiles'}<CR>"),
-				dashboard.button("q", "󰅙  Quit        ", ":qa<CR>"),
+				dashboard.button("q", "󰅙  Quit        ", ":q<CR>"),
 			},
 			opts = {
 				spacing = 1,
