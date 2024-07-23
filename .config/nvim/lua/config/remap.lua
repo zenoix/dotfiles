@@ -23,6 +23,10 @@ vim.keymap.set("v", "<leader>y", '"+y')
 -- See `:help vim.keymap.set()`
 vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
+-- Unmap s and S
+vim.keymap.set({ "n", "v" }, "s", "<Nop>", { silent = true })
+vim.keymap.set({ "n", "v" }, "S", "<Nop>", { silent = true })
+
 -- Change terminal emulator normal mode key to esc
 vim.keymap.set("t", "<leader><Esc>", "<C-\\><C-n>")
 
