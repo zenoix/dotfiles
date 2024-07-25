@@ -9,7 +9,7 @@ import = [
 [window]
 dynamic_title = false
 blur = true
-opacity = 0.975
+# opacity = 0.975
 
 [window.padding]
 x = 5
