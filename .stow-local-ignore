@@ -21,7 +21,7 @@ _darcs
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
-bin
+^/bin
 tools
 static
 \.stowrc
