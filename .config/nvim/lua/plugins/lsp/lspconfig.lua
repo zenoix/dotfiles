@@ -49,6 +49,10 @@ return {
 			capabilities = capabilities,
 		})
 
+		lspconfig.basedpyright.setup({
+			capabilities = capabilities,
+		})
+
 		lspconfig.bashls.setup({
 			capabilities = capabilities,
 		})
