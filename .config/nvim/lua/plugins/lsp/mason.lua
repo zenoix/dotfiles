@@ -26,7 +26,6 @@ return {
 		mason_lspconfig.setup({
 			ensure_installed = {
 				"ansiblels",
-				"basedpyright",
 				"bashls",
 				"dockerls",
 				"golangci_lint_ls",
@@ -51,6 +50,7 @@ return {
 				"goimports-reviser",
 				"golangci-lint",
 				"hadolint",
+				"mypy",
 				"prettier",
 				"stylua",
 			},
