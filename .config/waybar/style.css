@@ -15,7 +15,7 @@ window#waybar {
 }
 
 tooltip {
-    background: #EAB2C2;
+    background: @mauve;
     color: @main-fg;
     border-radius: 8px;
     border-width: 0px;
@@ -32,7 +32,7 @@ tooltip {
     padding-left: 4px;
     padding-right: 4px;
     margin-right: 0px;
-    color: #EAB2C2;
+    color: @mauve;
     animation: ws_normal 20s ease-in-out 1;
 }
 
@@ -52,7 +52,7 @@ tooltip {
 }
 
 #workspaces button.persistent:nth-child(2){
-    color: #EAB2C2;
+    color: @mauve;
 }
 
 #workspaces button.persistent:nth-child(3){
@@ -188,7 +188,7 @@ tooltip {
 
 
 #tray menu *{
-  color: #EAB2C2;
+  color: @mauve;
 }
 
 
@@ -213,7 +213,7 @@ tooltip {
 #blueooth,
 #pulseaudio,
 #cpu{
-    color: #EAB2C2;
+    color: @mauve;
 }
 
 #idle_inhibitor{ 
@@ -221,8 +221,8 @@ tooltip {
 }
 
 #custom-launcher{
-    color:@bar-bg;
-    background: #EAB2C2;
+    color:@crust;
+    background: @mauve;
     padding-right: 15px;
     font-size: 17px;
     padding-left: 12px;
