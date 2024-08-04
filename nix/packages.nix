@@ -5,7 +5,6 @@
     permittedInsecurePackages = [ "python-2.7.18.8" ];
   };
 
-
   # Install firefox
   programs.firefox.enable = true;
 
@@ -30,11 +29,21 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
+  services = {
+    syncthing = {
+      enable = true;
+      user = "zenoix";
+      dataDir = "/home/zenoix/Documents";    # Default folder for new synced folders
+      configDir = "/home/zenoix/dotfiles/.config/syncthing";   # Folder for Syncthing's settings and keys
+    };
+  };
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     # Desktop apps
     discord
+    libreoffice-qt
 
     # Coding stuff
     kitty
