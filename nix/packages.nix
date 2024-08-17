@@ -20,11 +20,6 @@
     xwayland.enable = true;
   };
 
-  # Install starship
-  programs.starship = {
-    enable = true;
-  };
-
   # Install Zsh
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
@@ -44,34 +39,43 @@
     # Desktop apps
     discord
     libreoffice-qt
+    anki-bin
 
     # Coding stuff
-    kitty
-    gnumake
+    (python3.withPackages (ps: with ps; [ requests ]))
+    R
     gcc
+    gnumake
+    go
+    kitty
     nodejs
     python
-    (python3.withPackages (ps: with ps; [ requests ]))
 
     # CLI stuff
-    neofetch
-    tree
-    wget
-    git
-    fastfetch
-    htop
-    unzip
-    ffmpeg
-    zip
     brightnessctl
+    fastfetch
+    fd
+    ffmpeg
+    fzf
+    git
+    htop
+    neofetch
     openssl
+    ripgrep
+    starship
     tmux
+    tree
+    unzip
+    wget
+    zip
+    zoxide
 
     # Wayland stuff
     wl-clipboard
     cliphist
 
     # WM
+    hyprlock
     xdg-desktop-portal-hyprland
     waybar
 
@@ -84,7 +88,15 @@
     grim
     slurp
 
-    # Fonts
+  ];
+
+  fonts.packages = with pkgs; [
+    noto-fonts
+    noto-fonts-cjk
+    noto-fonts-emoji
+    liberation_ttf
     nerdfonts
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 }
+
