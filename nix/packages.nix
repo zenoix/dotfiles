@@ -77,6 +77,7 @@
     # WM
     hyprlock
     xdg-desktop-portal-hyprland
+    rofi-wayland
     waybar
 
     # Sound
