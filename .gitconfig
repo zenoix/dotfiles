@@ -41,3 +41,5 @@
 
 [pull]
     rebase = true
+[credential "https://github.com"]
+	username = zenoix

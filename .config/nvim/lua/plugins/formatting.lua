@@ -13,7 +13,14 @@ return {
 				javascript = { "prettier" },
 				json = { "prettier" },
 				lua = { "stylua" },
-				python = { "ruff_fix", "ruff_format", "ruff_organize_imports" },
+				python = {
+					-- To fix auto-fixable lint errors.
+					"ruff_fix",
+					-- To run the Ruff formatter.
+					"ruff_format",
+					-- To organize the imports.
+					"ruff_organize_imports",
+				},
 				yaml = { "prettier" },
 				zsh = { "beautysh" },
 			},
