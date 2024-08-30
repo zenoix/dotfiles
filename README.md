@@ -1,5 +1,8 @@
 # My dotfiles
 
+> [!WARNING]
+> I have moved my dotfiles to use Nix Home Manager. You can find my new dotfiles in [my walnut-environment repo](https://github.com/zenoix/walnut-environment). Therefore, this repo will most likely be outdated.
+
 This directory contains the dotfiles for the main tools I use on my Arch linux system. The dotfiles should work on other Unix-based operating systems.
 
 It includes the dotfiles for the following:
